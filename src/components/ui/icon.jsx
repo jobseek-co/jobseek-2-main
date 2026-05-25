@@ -15,8 +15,18 @@ export const Icon = ({ d, size = 18 }) => (
   </svg>
 );
 
-export const Logo = () => (
-  <div className="font-mono font-black text-lg tracking-tight text-white">
-    <img src={img1} alt="JOOB SEEK" />
-  </div>
-);
+export const Logo = ({ iconOnly = false, className = "" }) => {
+  const logoSizeClasses = iconOnly ? "h-6 md:h-7" : "h-8 md:h-10 lg:h-12";
+
+  return (
+    <div
+      className={`font-mono font-black text-lg tracking-tight text-white ${className}`}
+    >
+      <img
+        src={img1}
+        alt="JOOB SEEK"
+        className={`${logoSizeClasses} w-auto max-w-full object-contain`}
+      />
+    </div>
+  );
+};
