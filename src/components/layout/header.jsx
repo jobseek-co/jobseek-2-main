@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../../assets/Rectangle.png";
+import img1 from "../../assets/JOOB SEEK.png";
 
 const NAV_LINKS = [
   { label: "Jobs", href: "/jobs" },
@@ -12,7 +12,6 @@ const ABOUT_LINKS = [
   { label: "About us", href: "/about" },
   { label: "Faq", href: "/faq" },
   { label: "Contact us", href: "/contact" },
- 
 ];
 
 export default function Header() {
@@ -27,12 +26,15 @@ export default function Header() {
   return (
     <header className="w-full bg-[#17191F] border-b border-white/5">
       <nav className="max-w-screen-xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between gap-8">
-        
         {/* Logo */}
-        <Link to="/" onClick={closeMenus} className="flex items-center shrink-0 select-none">
+        <Link
+          to="/"
+          onClick={closeMenus}
+          className="flex items-center shrink-0 select-none"
+        >
           <img
             src={img1}
-            alt="Logo"
+            alt="JOOB SEEK"
             className="h-8 md:h-10 w-auto object-contain"
           />
         </Link>
@@ -126,12 +128,32 @@ export default function Header() {
           onClick={() => setMobileOpen((o) => !o)}
         >
           {mobileOpen ? (
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
             </svg>
           ) : (
-            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
             </svg>
           )}
         </button>

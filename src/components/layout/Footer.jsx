@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Facebook, Youtube, Globe, Instagram, Linkedin, Settings } from "lucide-react";
+import { Facebook, Youtube, Globe, Instagram, Linkedin, Settings, DivideCircle } from "lucide-react";
+import { Logo } from "../ui/icon";
 
 const links = {
   company: ["about", "Our team", "jobs"],
@@ -65,9 +66,11 @@ export default function Footer() {
 
         {/* Logo */}
         <div className="flex items-center gap-0.5 select-none">
-          <span className="text-white font-black text-xl tracking-tight">J</span>
-          <Settings className="w-5 h-5 text-violet-500 fill-violet-500" />
-          <span className="text-white font-black text-xl tracking-tight">B SEEK</span>
+        <div className="w-10 h-10  flex items-center justify-center">
+          <Logo className="w-6 h-6" />
+          </div>
+          <span className="text-white text-sm font-semibold">JOOB SEEK</span>
+        
         </div>
 
         {/* Social Icons */}

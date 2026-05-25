@@ -1,7 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import img1 from "../../assets/ILL.png";
-import img2 from "../../assets/Rectangle.png";
+import img2 from "../../assets/JOOB SEEK.png";
 
 function Authresult() {
   return (
@@ -21,7 +21,7 @@ function Authresult() {
           {/* Logo */}
           <img
             src={img2}
-            alt="Job Seek"
+            alt="JOOB SEEK"
             className="
               w-[38%] sm:w-[30%] md:w-[55%] xl:w-[50%]
               object-contain

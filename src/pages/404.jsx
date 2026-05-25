@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import img2 from "../assets/Rectangle.png";
+import img2 from "../assets/JOOB SEEK.png";
 import img1 from "../assets/ILL.png";
 import img3 from "../assets/ghost.png";
 
@@ -11,15 +11,13 @@ function NotFound() {
   return (
     <main className="w-full min-h-screen bg-[#0D0E11] flex items-center justify-center">
       <div className="relative w-full max-w-[1400px] min-h-screen p-2 sm:p-3 md:p-4">
-
         {/* Card */}
         <div className="relative w-full min-h-screen rounded-2xl overflow-hidden bg-[#0D0E11] border-0 md:bg-[linear-gradient(rgba(104,87,246,0.05)_0%,rgba(165,73,226,0.05)_100%),linear-gradient(90deg,rgba(27,27,27,0.5)_0%,rgba(27,27,27,0.5)_100%)] border border-white/5 flex flex-col">
-
           {/* ── Logo ── */}
           <div className="flex-shrink-0 px-6 pt-6 md:px-10 md:pt-8">
             <img
               src={img2}
-              alt="Job Seek"
+              alt="JOOB SEEK"
               className="w-28 md:w-36 object-contain"
             />
           </div>
@@ -34,13 +32,12 @@ function NotFound() {
           </div>
 
           {/* ── Main Content ── */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
             className="flex-1 flex flex-col justify-center px-6 md:px-10 lg:px-16 pb-16 md:pb-10 gap-4 md:gap-5 max-w-lg mx-auto md:mx-0  md:text-left"
           >
-
             {/* Error label */}
             <p className="text-[#6857F6] text-xs md:text-sm font-semibold tracking-wide">
               Error 404
@@ -73,19 +70,14 @@ function NotFound() {
           </motion.div>
 
           {/* ── Ghost illustration (hidden on mobile) ── */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
             className="hidden md:block absolute right-8 md:right-16 lg:right-24 top-1/2 -translate-y-1/2 pointer-events-none select-none"
           >
             <div className="relative flex flex-col items-center">
-
-              <img
-                src={img3}
-                alt=""
-                className="w-72 lg:w-80 xl:w-96"
-              />
+              <img src={img3} alt="" className="w-72 lg:w-80 xl:w-96" />
 
               {/* Glow shadow */}
               <div className="w-24 md:w-32 h-4 md:h-5 rounded-full bg-[#6857F6]/40 blur-xl -mt-4" />
@@ -98,7 +90,6 @@ function NotFound() {
               Contact Us &nbsp;|&nbsp; info@company.com
             </p>
           </div>
-
         </div>
       </div>
     </main>
